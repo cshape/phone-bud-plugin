@@ -1,0 +1,33 @@
+{
+  "name": "phone-bud",
+  "version": "1.0.0",
+  "description": "Place real phone calls to US and Canada numbers, one number or a short list of businesses, and get back the summary and transcript.",
+  "author": {
+    "name": "Phone Bud",
+    "email": "support@phone-bud.com"
+  },
+  "homepage": "https://www.phone-bud.com/lp/grok-bot",
+  "repository": "https://github.com/cshape/phone-bud-plugin",
+  "license": "MIT",
+  "keywords": [
+    "phone",
+    "calls",
+    "voice",
+    "mcp",
+    "grok-bot"
+  ],
+  "logo": "assets/logo.svg",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "PHONE_BUD_API_KEY": {
+        "type": "string",
+        "title": "Phone Bud API key",
+        "description": "A pb_live_ key from Phone Bud, under Settings, Developer."
+      }
+    },
+    "required": [
+      "PHONE_BUD_API_KEY"
+    ]
+  }
+}
