@@ -1,10 +1,7 @@
 {
   "mcpServers": {
     "phone-bud": {
-      "url": "https://www.phone-bud.com/mcp",
-      "headers": {
-        "Authorization": "Bearer ${PHONE_BUD_API_KEY}"
-      }
+      "url": "https://www.phone-bud.com/mcp"
     }
   }
 }

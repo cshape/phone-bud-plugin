@@ -4,26 +4,27 @@ Lets Grok Bot, Cursor and other agents place real phone calls with [Phone Bud](h
 
 ## What's in it
 
-- `mcp.json`: Phone Bud's hosted MCP server, `https://www.phone-bud.com/mcp`, with your API key in the `Authorization` header.
-- `skills/phone-bud/SKILL.md`: when to call, confirming with the user first, writing the request, calling a list, and limits. The same file is served at https://www.phone-bud.com/skills/phone-bud/SKILL.md.
+- `mcp.json`: Phone Bud's hosted MCP server, `https://www.phone-bud.com/mcp`. You sign in with your Phone Bud account, so there's no API key to paste.
+- `skills/phone-bud/SKILL.md`: when to call, confirming with the user first, writing the request, calling a short list, and limits. The same file is served at https://www.phone-bud.com/skills/phone-bud/SKILL.md.
 
 ## Setup
 
-1. Create an API key in Phone Bud under Settings, Developer.
-2. Install the plugin and set `PHONE_BUD_API_KEY` to that key.
+Install the plugin. The first time your agent connects, it opens Phone Bud so you can sign in and allow it.
 
 Without the plugin, paste this into a Grok Bot chat:
 
 ```
 Add a custom MCP server named phone-bud.
 URL: https://www.phone-bud.com/mcp
-Header: Authorization: Bearer <API key>
-Ask me for the key in a secure form.
+It uses OAuth sign-in, with no API key or headers.
+Start the sign-in and give me the link.
 
 Then install the skill at
 phone-bud.com/skills/phone-bud/SKILL.md
 and check the connection with list_agents.
 ```
+
+Clients that can't sign in can send an API key instead: create one in Phone Bud under Settings, Developer, and send it as `Authorization: Bearer <key>`.
 
 ## Tools
 
