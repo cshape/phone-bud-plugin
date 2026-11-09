@@ -24,6 +24,8 @@ phone-bud.com/skills/phone-bud/SKILL.md
 and check the connection with list_agents.
 ```
 
+You can also add it on Grok's connector page. At [grok.com/connectors](https://grok.com/connectors), choose New Connector, then Custom, enter `https://www.phone-bud.com/mcp`, and sign in to Phone Bud. This adds the server without the skill.
+
 Clients that can't sign in can send an API key instead: create one in Phone Bud under Settings, Developer, and send it as `Authorization: Bearer <key>`.
 
 ## Tools
