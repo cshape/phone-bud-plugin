@@ -37,7 +37,7 @@ Clients that can't sign in can send an API key instead: create one in Phone Bud 
 - US and Canada numbers only. Calls end at 30 minutes, including hold time.
 - The agent says it's an AI if asked, and never claims to be a person or the user.
 - It can't transfer the call to the user, receive calls, or pay for anything.
-- Call only people and businesses you have a reason to contact. See the [acceptable use policy](https://www.phone-bud.com/acceptable-use) and [privacy policy](https://www.phone-bud.com/privacy).
+- Call only people and businesses you have a reason to contact. See the [terms of service](https://www.phone-bud.com/terms), [acceptable use policy](https://www.phone-bud.com/acceptable-use) and [privacy policy](https://www.phone-bud.com/privacy).
 
 ## Pricing
 
