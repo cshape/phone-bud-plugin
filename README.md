@@ -30,7 +30,7 @@ Clients that can't sign in can send an API key instead: create one in Phone Bud 
 
 ## Tools
 
-`make_call`, `get_call`, `start_campaign`, `get_campaign`, `list_campaigns`, `list_contacts`, `list_agents`, `create_agent`, `update_agent`.
+`make_call`, `get_call`, `start_campaign`, `get_campaign`, `list_campaigns`, `list_contacts`, `list_agents`, `list_context`, `create_agent`, `update_agent`.
 
 ## Limits
 

@@ -12,7 +12,7 @@ Phone Bud's MCP server (`https://www.phone-bud.com/mcp`) places outbound calls w
 - Confirm the number, who it belongs to, and what to ask or say with the user. A call can't be taken back once it connects, and it uses the user's Phone Bud minutes.
 - Call only people and businesses the user has a reason to contact. No marketing calls or cold outreach.
 - Numbers must be in the US or Canada, in E.164 format: `+15551234567`.
-- Leave out card numbers and passwords.
+- Never write card numbers or passwords into a prompt. Details the user saved in Phone Bud go by id (see Saved details).
 
 ## One call: `make_call`
 
@@ -36,6 +36,10 @@ make_call({
 })
 ```
 
+## Saved details: `list_context`
+
+Users save details in Phone Bud, such as a payment card or an address. `list_context` shows each one's id, title and tags, never what's in it. When a call needs one (a deposit, a delivery address), ask the user, then pass its id in `context_ids` on `make_call` or `start_campaign`. Phone Bud gives the contents to the calling agent. Attach only what this call needs. Card numbers and passwords said on the call are removed from the transcript you get back.
+
 ## Several places: `start_campaign`
 
 Use it to ask several numbers the same thing, such as prices from five caterers.
@@ -54,6 +58,6 @@ Lead with the answer from the notes. Add key details such as names, times and pr
 ## Limits
 
 - Calls end at 30 minutes, including hold time. The first call on an account is free, up to 5 minutes.
-- The agent can't transfer the call to the user, receive calls, or pay for anything.
+- The agent can't transfer the call to the user or receive calls. It can give payment details only from a saved item attached with `context_ids`.
 - Calls come from a shared Phone Bud number. If the user has verified their own number in Phone Bud, pass it as `from_phone`.
 - If a tool says the account is out of minutes, send the user to https://www.phone-bud.com/app/settings/billing.
