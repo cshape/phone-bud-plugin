@@ -7,6 +7,7 @@ Lets Codex, ChatGPT, Hermes Agent, Grok Bot, Cursor and other agents place real 
 - `mcp.json` (Cursor) and `.mcp.json` (Codex): Phone Bud's hosted MCP server, `https://www.phone-bud.com/mcp`. You sign in with your Phone Bud account, so there's no API key to paste.
 - `.codex-plugin/plugin.json` and `.agents/plugins/marketplace.json`: the Codex plugin, and this repo as a Codex plugin marketplace.
 - `skills/phone-bud/SKILL.md`: when to call, confirming with the user first, writing the request, calling a short list, and limits. The same file is served at https://www.phone-bud.com/skills/phone-bud/SKILL.md.
+- `hermes/`: the Hermes Agent package (Agent Plugins v1: `plugin.json`, `mcp.json` and a copy of the skill) for Hermes's plugin catalog. Keep its `skills/phone-bud/SKILL.md` identical to the one above.
 
 ## Setup
 
