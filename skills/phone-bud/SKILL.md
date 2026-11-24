@@ -60,4 +60,4 @@ Lead with the answer from the notes. Add key details such as names, times and pr
 - Calls end at 30 minutes, including hold time. The first call on an account is free, up to 5 minutes.
 - The agent can't transfer the call to the user or receive calls. It can give payment details only from a saved item attached with `context_ids`.
 - Calls come from a shared Phone Bud number. If the user has verified their own number in Phone Bud, pass it as `from_phone`.
-- If a tool says the account is out of minutes, tell the user they can buy more in Phone Bud under Settings, Billing (phone-bud.com/app/settings/billing).
+- If a tool says the account is out of minutes, tell the user the call wasn't placed because their Phone Bud account is out of minutes.
