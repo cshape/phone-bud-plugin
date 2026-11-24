@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "phone-bud": {
+      "type": "http",
+      "url": "https://www.phone-bud.com/mcp",
+      "oauth_resource": "https://www.phone-bud.com/mcp"
+    }
+  }
+}

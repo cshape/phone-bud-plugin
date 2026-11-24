@@ -1,0 +1,35 @@
+{
+  "name": "phone-bud",
+  "version": "1.2.0",
+  "description": "Place real phone calls to US and Canada numbers, one number or a short list of businesses, and get back the summary and transcript.",
+  "author": {
+    "name": "Phone Bud",
+    "email": "support@phone-bud.com",
+    "url": "https://www.phone-bud.com"
+  },
+  "homepage": "https://www.phone-bud.com/lp/codex",
+  "repository": "https://github.com/cshape/phone-bud-plugin",
+  "license": "MIT",
+  "keywords": ["phone", "calls", "voice", "mcp"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Phone Bud",
+    "shortDescription": "Place real phone calls to US and Canada numbers and get back the transcript",
+    "longDescription": "Phone Bud places real outbound phone calls with an AI voice agent. Ask Codex to call a business or person, check stock, a price, hours or availability, book or move an appointment, or ask a short list of places the same question. Each call returns a summary, the outcome, key details and the transcript.\n\nThe agent gets through phone menus, waits on hold, says it's an AI if asked, and never claims to be a person. The skill has Codex confirm the number and the request with you before every call. Calls use your Phone Bud minutes; the first call is free, up to 5 minutes.",
+    "developerName": "Phone Bud",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://www.phone-bud.com",
+    "privacyPolicyURL": "https://www.phone-bud.com/privacy",
+    "termsOfServiceURL": "https://www.phone-bud.com/terms",
+    "defaultPrompt": [
+      "Call the hardware store and ask if they have the 20-volt drill battery in stock",
+      "Ask 3 bike shops the price of a tune-up this week"
+    ],
+    "brandColor": "#FF7A1A",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  }
+}
