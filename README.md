@@ -7,7 +7,8 @@ Lets Codex, ChatGPT, Hermes Agent, Grok Bot, Cursor and other agents place real 
 - `mcp.json` (Cursor) and `.mcp.json` (Codex): Phone Bud's hosted MCP server, `https://www.phone-bud.com/mcp`. You sign in with your Phone Bud account, so there's no API key to paste.
 - `.codex-plugin/plugin.json` and `.agents/plugins/marketplace.json`: the Codex plugin, and this repo as a Codex plugin marketplace.
 - `skills/phone-bud/SKILL.md`: when to call, confirming with the user first, writing the request, calling a short list, and limits. The same file is served at https://www.phone-bud.com/skills/phone-bud/SKILL.md.
-- `hermes/`: the Hermes Agent package (Agent Plugins v1: `plugin.json`, `mcp.json` and a copy of the skill) for Hermes's plugin catalog. Keep its `skills/phone-bud/SKILL.md` identical to the one above.
+- `openai/`: the package for OpenAI's plugin directory (ChatGPT and Codex): `plugin.json` with the listing, review test cases and publication settings under `extensions.com.openai`, `mcp.json` (OAuth with dynamic client registration), the skill and the logo. Upload it as a ZIP whose root is the folder's contents: `cd openai && zip -r ../phone-bud-openai.zip . -x '.*'`.
+- `hermes/`: the Hermes Agent package (Agent Plugins v1: `plugin.json`, `mcp.json` and a copy of the skill) for Hermes's plugin catalog. Keep its `skills/phone-bud/SKILL.md`, and `openai/`'s, identical to the one above.
 
 ## Setup
 
