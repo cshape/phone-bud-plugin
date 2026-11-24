@@ -1,17 +1,47 @@
 # Phone Bud plugin
 
-Lets Grok Bot, Cursor and other agents place real phone calls with [Phone Bud](https://www.phone-bud.com): one number or a short list of businesses, in the US and Canada. Each call returns a summary, the outcome, key details and the transcript.
+Lets Codex, ChatGPT, Hermes Agent, Grok Bot, Cursor and other agents place real phone calls with [Phone Bud](https://www.phone-bud.com): one number or a short list of businesses, in the US and Canada. Each call returns a summary, the outcome, key details and the transcript.
 
 ## What's in it
 
-- `mcp.json`: Phone Bud's hosted MCP server, `https://www.phone-bud.com/mcp`. You sign in with your Phone Bud account, so there's no API key to paste.
+- `mcp.json` (Cursor) and `.mcp.json` (Codex): Phone Bud's hosted MCP server, `https://www.phone-bud.com/mcp`. You sign in with your Phone Bud account, so there's no API key to paste.
+- `.codex-plugin/plugin.json` and `.agents/plugins/marketplace.json`: the Codex plugin, and this repo as a Codex plugin marketplace.
 - `skills/phone-bud/SKILL.md`: when to call, confirming with the user first, writing the request, calling a short list, and limits. The same file is served at https://www.phone-bud.com/skills/phone-bud/SKILL.md.
 
 ## Setup
 
-Install the plugin. The first time your agent connects, it opens Phone Bud so you can sign in and allow it.
+### Codex
 
-Without the plugin, paste this into a Grok Bot chat:
+```
+codex plugin marketplace add cshape/phone-bud-plugin
+codex plugin add phone-bud@phone-bud
+codex mcp login phone-bud
+```
+
+The login opens Phone Bud so you can sign in and allow Codex. Then ask Codex to call someone; the skill has it confirm the number and the request with you first.
+
+Without the plugin: `codex mcp add phone-bud --url https://www.phone-bud.com/mcp` (it starts the same sign-in).
+
+### ChatGPT
+
+In ChatGPT on the web, open Plugins, choose +, then Add custom MCP server. Name it Phone Bud, enter `https://www.phone-bud.com/mcp`, choose OAuth, create it, and sign in to Phone Bud. Then mention @Phone Bud in a chat. Custom MCP servers depend on your ChatGPT plan; in a Business workspace an admin adds them.
+
+### Hermes Agent
+
+```
+hermes mcp add phone-bud --url https://www.phone-bud.com/mcp --auth oauth
+hermes skills install https://www.phone-bud.com/skills/phone-bud/SKILL.md
+```
+
+The first command opens Phone Bud so you can sign in and allow Hermes (on a server with no browser, `hermes mcp login phone-bud` and paste the address back). Check it with `hermes mcp test phone-bud`.
+
+### Cursor
+
+Install the plugin. The first time Cursor connects, it opens Phone Bud so you can sign in and allow it.
+
+### Grok Bot
+
+Paste this into a Grok Bot chat:
 
 ```
 Add a custom MCP server named phone-bud.

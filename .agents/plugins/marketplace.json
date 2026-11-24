@@ -1,0 +1,20 @@
+{
+  "name": "phone-bud",
+  "interface": {
+    "displayName": "Phone Bud"
+  },
+  "plugins": [
+    {
+      "name": "phone-bud",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
