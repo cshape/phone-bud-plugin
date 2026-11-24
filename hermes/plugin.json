@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "phone-bud",
+  "version": "1.0.0",
+  "description": "Place real phone calls to US and Canada numbers, one number or a short list of businesses, and get back the summary, outcome and transcript.",
+  "author": {
+    "name": "Phone Bud",
+    "url": "https://www.phone-bud.com"
+  },
+  "homepage": "https://www.phone-bud.com/lp/hermes",
+  "repository": "https://github.com/cshape/phone-bud-plugin",
+  "license": "MIT",
+  "keywords": [
+    "phone",
+    "calls",
+    "voice",
+    "mcp"
+  ],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "phone-bud": {
+          "trust": "untrusted",
+          "timeout": 660
+        }
+      }
+    }
+  }
+}
