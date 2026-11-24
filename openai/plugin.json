@@ -53,7 +53,7 @@
             },
             {
               "description": "Places one call to the review test line after the user confirms, and reports the answer.",
-              "prompt": "Use Phone Bud to call <TEST_NUMBER> and ask what time they open tomorrow.",
+              "prompt": "Use Phone Bud to call +1 415-908-5038 and ask what time they open tomorrow.",
               "tools_triggered": "make_call",
               "expected_behavior": "Confirms the number and the request with the user, places the call, waits for it to end, and reports the opening time the line gave with a short summary."
             },
