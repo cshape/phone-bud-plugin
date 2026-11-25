@@ -45,7 +45,7 @@ Users save details in Phone Bud, such as a payment card or an address. `list_con
 Use it to ask several numbers the same thing, such as prices from five caterers.
 
 - `name`, `goal` (the overall aim) and `ask_script` (what to ask on every call).
-- `entries`: one per number, with `to_phone` and a `display_name`.
+- `entries`: one per number, with `to_phone` and a `display_name`. A campaign takes up to 40 numbers.
 - `output_fields`: what to pull out of each call, such as price or availability.
 - Calls go one at a time by default. `mode: "parallel"` with `concurrency` (up to 5) runs several at once.
 
